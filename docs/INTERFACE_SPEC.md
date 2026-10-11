@@ -1,0 +1,3 @@
+# SIA-003 Interface acceptance
+
+This responsive, accessible application shell reuses the pinned engine's `WorkspaceShell` and `DomainTool` to render 11 domain selectors. An actual domain click switches tool context; the objective input is retained separately for each domain only in volatile React state (no fake persistence), and review reports honest service readiness. It does not enable AI generation until real providers are connected. Academy uses wider, warmer surfaces with human-centered introductory language and eventual external contextual-lesson overlays. Keyboard focus, semantic navigation, status announcement, high-contrast controls and mobile layout are tested.
