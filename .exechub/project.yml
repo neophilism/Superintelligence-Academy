@@ -1,0 +1,10 @@
+# Canonical plan: registry/roadmap.json. This is a secondary manifest; do not parse this as a separate denominator.
+project:
+  name: Superintelligence-Academy
+  display_name: Superintelligence Academy
+  repository: neophilism/Superintelligence-Academy
+  status: active-development
+roadmap:
+  version: 1
+  planned_prs: 23
+  approved: true
