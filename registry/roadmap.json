@@ -23,7 +23,9 @@
         "Deploy a functional app shell to a preview without copying engine code.",
         "An incompatible engine SDK version fails CI or produces clear degraded state."
       ],
-      "pullRequests": []
+      "pullRequests": [
+        1
+      ]
     },
     {
       "id": "SIA-002",
