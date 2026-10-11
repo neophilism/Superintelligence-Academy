@@ -110,7 +110,9 @@
         "Every instructional attachment resolves to a declared stable tool anchor.",
         "An outdated lesson is flagged rather than silently attached to wrong control."
       ],
-      "pullRequests": []
+      "pullRequests": [
+        3
+      ]
     },
     {
       "id": "SIA-006",
