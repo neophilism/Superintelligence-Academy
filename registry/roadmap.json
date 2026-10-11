@@ -132,7 +132,9 @@
         "Ten representative interactive anchors show relevant short explanations.",
         "No lesson overlay traps focus or covers core editing action."
       ],
-      "pullRequests": []
+      "pullRequests": [
+        4
+      ]
     },
     {
       "id": "SIA-007",
