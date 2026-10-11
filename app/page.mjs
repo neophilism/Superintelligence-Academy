@@ -1,6 +1,7 @@
 "use client";
 import React,{useEffect,useState} from 'react';
 import {WorkspaceShell,ToolPanel,DomainTool,WORKSPACE_DOMAINS} from '@superintelligence/ui';
+import LearningHint from '../components/learning-hint.mjs';
 const names={code:'Code',music:'Music',poetry:'Poetry','persuasive-writing':'Persuasive writing',research:'Research',legislation:'Legislation',image:'Images',video:'Film & video',voice:'Voice',data:'Data',workflow:'Workflows'};
 const controls=[{id:'objective',kind:'textarea',label:'Project objective',description:'Define what you want to accomplish. External AI execution is unavailable until an authorized provider and spending controls are connected.',rows:5}];
 export default function Page(){
@@ -25,6 +26,7 @@ export default function Page(){
          React.createElement(ToolPanel,{title:'Prepare your work'},
            React.createElement('p',{className:'status-note'},engine.status==='connected'?'The engine is reachable. Provider operations must be verified separately.':'AI generation is not available in this workspace yet. Your input stays in this browser session until a project storage service is enabled.'),
            React.createElement(DomainTool,{product:"academy",domain:active,title:'Project brief',controls,values:{objective:drafts[active]||''},onFieldChange:change,onSubmit:()=>setMessage('The project brief has not been submitted. Persistent projects and AI workflows require verified engine services.'),submitLabel:'Review project readiness'}),
+           React.createElement(LearningHint,{anchor:active+'.objective'}),
            React.createElement('p',{role:'status','aria-live':'polite',className:'action-message'},message))
        ))
    )
