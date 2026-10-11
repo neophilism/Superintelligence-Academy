@@ -1,0 +1,2 @@
+import {listPublishedLessons} from '../../../lib/lessons.mjs';
+export async function GET(request){const url=new URL(request.url);try{const anchor=url.searchParams.get('anchor')||undefined,level=url.searchParams.get('level')||undefined;return Response.json({items:listPublishedLessons({anchor,level}),access:'free-reviewed-material',version:1},{headers:{'Cache-Control':'public, max-age=300'}});}catch{return Response.json({error:'invalid_lesson_query'},{status:400,headers:{'Cache-Control':'no-store'}});}}
