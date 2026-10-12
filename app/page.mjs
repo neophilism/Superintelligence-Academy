@@ -1,6 +1,6 @@
 "use client";
 import React,{useEffect,useState} from 'react';
-import {WorkspaceShell,ToolPanel,DomainTool,WORKSPACE_DOMAINS} from '@superintelligence/ui';
+import {WorkspaceShell,ToolPanel,DomainTool,WORKSPACE_DOMAINS,ProjectPortal} from '@superintelligence/ui';
 import LearningHint from '../components/learning-hint.mjs';
 import GoalDirectory from '../components/goal-directory.mjs';
 const names={code:'Code',music:'Music',poetry:'Poetry','persuasive-writing':'Persuasive writing',research:'Research',legislation:'Legislation',image:'Images',video:'Film & video',voice:'Voice',data:'Data',workflow:'Workflows'};
@@ -24,6 +24,7 @@ export default function Page(){
        ...WORKSPACE_DOMAINS.map(domain=>React.createElement('button',{key:domain,type:'button','aria-current':active===domain?'page':undefined,'data-domain-option':domain,className:active===domain?'nav-link active':'nav-link',onClick:()=>{setActive(domain);setMessage('')}},names[domain]))),
      React.createElement('main',{id:'main',className:'app-main',tabIndex:-1},
        React.createElement('div',{className:'hero'},React.createElement('p',{className:'eyebrow'},"LEARN • CREATE • EXPLORE"),React.createElement('h1',null,"Turn your ideas into real projects"),React.createElement('p',null,"Choose a creative or technical workspace. Interactive lessons become available only when approved teaching materials are published.")),
+       React.createElement(ProjectPortal,{product:"academy",domain:active,engineOrigin:process.env.NEXT_PUBLIC_ENGINE_ORIGIN||'',companionOrigin:process.env.NEXT_PUBLIC_COMMAND_ORIGIN||'',onOpenProject:project=>{if(WORKSPACE_DOMAINS.includes(project.kind))setActive(project.kind);setMessage('')}}),
        React.createElement(GoalDirectory,{query:goalSearch,setQuery:setGoalSearch,availability:{},onChoose:domain=>{setActive(domain);setMessage('')}}),
        React.createElement(WorkspaceShell,{product:"academy",domain:active,title:names[active]},
          React.createElement(ToolPanel,{title:'Prepare your work'},
