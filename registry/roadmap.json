@@ -90,7 +90,9 @@
         "A novice reaches each enabled editor from a goal-oriented entry.",
         "Unavailable tool/provider cannot deceptively launch a demo job."
       ],
-      "pullRequests": []
+      "pullRequests": [
+        6
+      ]
     },
     {
       "id": "SIA-005",
@@ -153,7 +155,9 @@
         "A learner completes a real basic action after a short inline lesson.",
         "Incorrect/outdated examples are caught by content fixture checks."
       ],
-      "pullRequests": []
+      "pullRequests": [
+        7
+      ]
     },
     {
       "id": "SIA-008",
