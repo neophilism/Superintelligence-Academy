@@ -47,7 +47,9 @@
         "Same project/version IDs open in both products with no import/export.",
         "A revoked membership cannot open old shared project links."
       ],
-      "pullRequests": []
+      "pullRequests": [
+        8
+      ]
     },
     {
       "id": "SIA-003",
