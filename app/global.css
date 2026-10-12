@@ -6,3 +6,6 @@
 .hint-dismiss{font-size:1.3rem;padding:1px 10px}.hint-body{padding:10px 4px 0;line-height:1.5}.hint-body[hidden]{display:none}.hint-example{border-left:3px solid #32899f;padding-left:10px}.hint-restore{margin:8px 0}
 .hint-actions button:focus-visible,.hint-restore:focus-visible{outline:3px solid #125e9a;outline-offset:3px}
 @media(max-width:500px){.hint-heading{flex-wrap:wrap}.hint-actions{width:100%;justify-content:end}}
+
+.hint-depth{border:1px solid #86a9b5;border-radius:7px;background:#fff;color:#163847;padding:6px 9px;cursor:pointer;min-height:36px}
+.hint-depth:focus-visible{outline:3px solid #125e9a;outline-offset:3px}

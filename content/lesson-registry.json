@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": 1,
+  "revision": 2,
   "lessons": [
     {
       "id": "micro-code-objective",
@@ -155,6 +155,182 @@
       "visibility": "published",
       "approvedBy": "initial editorial specification",
       "reviewedAt": "2026-10-11"
+    },
+    {
+      "id": "short-code-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "code.objective",
+      "domain": "code",
+      "title": "30-second exercise: Turn a vague idea into a testable specification",
+      "content": "Write two user-facing screens, the data each screen edits, one failure case and a test that confirms the expected outcome. In this exercise, enter that specification in the project objective editor; no code execution occurs.",
+      "example": "Create a web app with login, an editable dashboard, a PostgreSQL database and automated tests.",
+      "prerequisites": [
+        "micro-code-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-music-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "music.objective",
+      "domain": "music",
+      "title": "30-second exercise: Describe the sound, not just the genre",
+      "content": "State a tempo feel, drums, bass, melodic lead, structural change and whether vocals are allowed. Name the hook or emotional contrast. Type these into the objective editor; this exercise does not generate audio.",
+      "example": "I want an actionable, editable music deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-music-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-poetry-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "poetry.objective",
+      "domain": "poetry",
+      "title": "30-second exercise: Choose what a poem should make a reader experience",
+      "content": "Name the speaker, setting, one concrete image and the emotion at the beginning and end. Choose rhyme or free verse, then revise the draft objective to avoid one familiar cliché.",
+      "example": "I want an actionable, editable poetry deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-poetry-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-persuasivewriting-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "persuasive-writing.objective",
+      "domain": "persuasive-writing",
+      "title": "30-second exercise: Begin with the audience and a concrete desired action",
+      "content": "Name your audience and desired action, state a verifiable claim, and acknowledge the strongest fair objection. Add the kind of evidence required to test the argument; do not fabricate citations.",
+      "example": "I want an actionable, editable persuasive-writing deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-persuasivewriting-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-research-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "research.objective",
+      "domain": "research",
+      "title": "30-second exercise: Frame a falsifiable research question",
+      "content": "Formulate a narrow question, date range, source hierarchy and a possible counterexample. Describe how you would record citations and how contradictory information would change the conclusion.",
+      "example": "I want an actionable, editable research deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-research-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-legislation-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "legislation.objective",
+      "domain": "legislation",
+      "title": "30-second exercise: State the policy objective before drafting statutory language",
+      "content": "Specify jurisdiction, intended statutory change, key definitions, administering authority and enforceable deadline. Note where current legal text needs verification before any real bill is finalized.",
+      "example": "I want an actionable, editable legislation deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-legislation-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-image-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "image.objective",
+      "domain": "image",
+      "title": "30-second exercise: Describe composition with measurable details",
+      "content": "Define subject, camera viewpoint, composition, light source, palette and dimensions. For an edit, explicitly name the elements that must remain unchanged and the permitted edit region.",
+      "example": "I want an actionable, editable image deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-image-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-video-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "video.objective",
+      "domain": "video",
+      "title": "30-second exercise: Plan deliverables before generating shots",
+      "content": "Divide a proposed trailer into three numbered shots, naming length, camera movement, continuity objects and audio cues. Include the final export ratio and total runtime.",
+      "example": "I want an actionable, editable video deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-video-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-voice-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "voice.objective",
+      "domain": "voice",
+      "title": "30-second exercise: Write for listening rather than only reading",
+      "content": "Identify listener, language, voice energy and pacing. Mark unfamiliar proper nouns with phonetic pronunciation and specify caption timing, permissions and reference rights.",
+      "example": "I want an actionable, editable voice deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-voice-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-data-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "data.objective",
+      "domain": "data",
+      "title": "30-second exercise: Define the question and data quality rules first",
+      "content": "Identify your source, units, treatment of missing values and an expected integrity check. Describe which chart would answer the question and what result would contradict your expectation.",
+      "example": "I want an actionable, editable data deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-data-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
+    },
+    {
+      "id": "short-workflow-objective",
+      "version": 1,
+      "level": "L1",
+      "anchor": "workflow.objective",
+      "domain": "workflow",
+      "title": "30-second exercise: Start with inputs, decisions, approvals and final outputs",
+      "content": "Write the trigger, sequence of inputs and outputs, maximum cost, conditions for stopping and at least one human approval gate before publishing or spending real money.",
+      "example": "I want an actionable, editable workflow deliverable and a way to review the result.",
+      "prerequisites": [
+        "micro-workflow-objective"
+      ],
+      "visibility": "published",
+      "approvedBy": "AI-assisted review against current interface (not human-certified)",
+      "reviewedAt": "2026-10-12"
     }
   ],
   "courses": []
