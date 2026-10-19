@@ -11,10 +11,7 @@
       "id": "SIA-001",
       "title": "Initialize independent Academy web app and CI",
       "origin": "original",
-      "dependsOn": [
-        "SIE-002",
-        "SIE-008"
-      ],
+      "dependsOn": [],
       "scope": [
         "Create independent Academy Next.js app with SDK version pin and environment validation.",
         "Add build, lint, tests, CI, deploy/preview pipeline and feature-flag control.",
@@ -28,7 +25,16 @@
       "prs": [
         1
       ],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-002"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-008"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -36,10 +42,7 @@
       "title": "Shared SSO and project portability",
       "origin": "original",
       "dependsOn": [
-        "SIA-001",
-        "SIE-003",
-        "SIE-004",
-        "SIE-007"
+        "SIA-001"
       ],
       "scope": [
         "Connect OIDC login and user/organization scope to Academy sessions.",
@@ -54,7 +57,20 @@
       "prs": [
         8
       ],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-003"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-004"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-007"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -62,8 +78,7 @@
       "title": "Academy theme, responsive accessible shell",
       "origin": "original",
       "dependsOn": [
-        "SIA-001",
-        "SIE-008"
+        "SIA-001"
       ],
       "scope": [
         "Design approachable but restrained Academy shell, typography, spacing, navigation and responsive rules.",
@@ -78,7 +93,12 @@
       "prs": [
         2
       ],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-008"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -86,9 +106,7 @@
       "title": "Tools directory, search and goal-first onboarding",
       "origin": "original",
       "dependsOn": [
-        "SIA-003",
-        "SIE-009",
-        "SIE-010"
+        "SIA-003"
       ],
       "scope": [
         "Create searchable tools catalog grouped by user goals and capability families.",
@@ -103,7 +121,16 @@
       "prs": [
         6
       ],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-009"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-010"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -111,8 +138,7 @@
       "title": "Lesson/slot schema and learning registry",
       "origin": "original",
       "dependsOn": [
-        "SIA-001",
-        "SIE-009"
+        "SIA-001"
       ],
       "scope": [
         "Implement Academy-owned lesson/course/version entities and stable engine UI-slot references.",
@@ -127,7 +153,12 @@
       "prs": [
         3
       ],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-009"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -182,9 +213,7 @@
       "title": "Scoped AI tutor conversation and content retrieval",
       "origin": "original",
       "dependsOn": [
-        "SIA-005",
-        "SIE-013",
-        "SIE-014"
+        "SIA-005"
       ],
       "scope": [
         "Integrate AI tutor scoped to verified current lesson, user permission and consented project artifacts.",
@@ -197,7 +226,16 @@
         "Tutor refuses to fabricate completed runs or unsupported model capability."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-013"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-014"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -206,8 +244,7 @@
       "origin": "original",
       "dependsOn": [
         "SIA-006",
-        "SIA-008",
-        "SIE-012"
+        "SIA-008"
       ],
       "scope": [
         "Implement guided step controller observing real engine tool actions and run results.",
@@ -220,7 +257,12 @@
         "A fake click or mocked output cannot earn live-completion badge."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-012"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -228,9 +270,7 @@
       "title": "Interactive project lessons and goal checklists",
       "origin": "original",
       "dependsOn": [
-        "SIA-009",
-        "SIE-015",
-        "SIE-023"
+        "SIA-009"
       ],
       "scope": [
         "Build L3 goal-based tutorials with deliverable checklist and workflow preview.",
@@ -243,7 +283,16 @@
         "Pause at a checkpoint, resume, and edit a single result independently."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-015"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-023"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -272,8 +321,7 @@
       "title": "Safe practice fixtures, dry-runs and labeling",
       "origin": "original",
       "dependsOn": [
-        "SIA-009",
-        "SIE-014"
+        "SIA-009"
       ],
       "scope": [
         "Build safe practice fixtures with explicit simulation badges and reproducible sample assets.",
@@ -286,7 +334,12 @@
         "User can distinguish simulated and actual generation at every step."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-014"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -383,10 +436,7 @@
       "title": "Foundational courses across major tool categories",
       "origin": "original",
       "dependsOn": [
-        "SIA-016",
-        "SIE-021",
-        "SIE-024",
-        "SIE-031"
+        "SIA-016"
       ],
       "scope": [
         "Author actual foundation modules for writing, research, code and image with hands-on tasks.",
@@ -399,7 +449,20 @@
         "Course task fails honestly when required provider is unavailable."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-021"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-024"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-031"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -408,9 +471,7 @@
       "origin": "original",
       "dependsOn": [
         "SIA-010",
-        "SIA-017",
-        "SIE-023",
-        "SIE-027"
+        "SIA-017"
       ],
       "scope": [
         "Implement L4/L5 capstone from project brief through multimodal workflow and review.",
@@ -423,7 +484,16 @@
         "A failed trailer shot can be fixed without recreating completed upstream project."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-023"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-027"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -431,8 +501,7 @@
       "title": "Paid checkout, refunds and finite course compute bundles",
       "origin": "original",
       "dependsOn": [
-        "SIA-016",
-        "SIE-014"
+        "SIA-016"
       ],
       "scope": [
         "Integrate payment checkout, tax/fee reporting hooks, refund and signed webhook handling.",
@@ -445,7 +514,12 @@
         "Refund revokes entitlement and adjusts unused bundle balances correctly."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-014"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -453,8 +527,7 @@
       "title": "Bounded free tier and contribution-margin subsidy",
       "origin": "original",
       "dependsOn": [
-        "SIA-019",
-        "SIE-014"
+        "SIA-019"
       ],
       "scope": [
         "Define bounded introductory free-tier quotas and anti-abuse controls by identity, device signal and rate limits.",
@@ -467,7 +540,12 @@
         "An exhausted user retains access to free static lessons and owned outputs."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-014"
+        }
+      ],
       "externalPrerequisites": []
     },
     {
@@ -524,9 +602,7 @@
         "SIA-002",
         "SIA-018",
         "SIA-020",
-        "SIA-022",
-        "SCC-003",
-        "SIE-039"
+        "SIA-022"
       ],
       "scope": [
         "Deploy Academy app to authorized domain with release identity and rollback.",
@@ -539,7 +615,16 @@
         "Failed readiness or simulated provider output blocks production acceptance."
       ],
       "prs": [],
-      "externalDependencies": [],
+      "externalDependencies": [
+        {
+          "repository": "neophilism/Superintelligence-Command-Center",
+          "unitId": "SCC-003"
+        },
+        {
+          "repository": "neophilism/Superintelligence-Engine",
+          "unitId": "SIE-039"
+        }
+      ],
       "externalPrerequisites": []
     }
   ],
